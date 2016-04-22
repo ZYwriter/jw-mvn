@@ -7,6 +7,8 @@
   <name>ja-mvn-skill</name>
   <description>java技术研究(maven构建)</description>
   <modules>
-  	<module>ja-mvn-wrapper</module>
+  	<module>jw-mvn-wrapper</module>
+  	<module>jw-mvn-spring</module>
+  	<module>jw-mvn-log</module>
   </modules>
 </project>
