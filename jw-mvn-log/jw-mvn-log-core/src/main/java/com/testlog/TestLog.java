@@ -3,17 +3,17 @@ package com.testlog;
 import org.apache.log4j.Logger;
 
 public class TestLog {
-	private static final Logger file = Logger.getLogger("test1");  
-    private static final Logger register = Logger.getLogger("test2");  
+	private static final Logger test1 = Logger.getLogger("test1");  
+    private static final Logger test2 = Logger.getLogger("test2");  
     
     public static void main(String[] args) {
-		file.info("info===================================");
-		file.warn("warn===================================");
-		file.debug("debug===================================");
-		file.error("error===================================");
-		register.info("info===================================");
-		register.warn("warn===================================");
-		register.debug("debug===================================");
-		register.error("error===================================");
+		test1.info("info===================================");
+		test1.warn("warn===================================");
+		test1.debug("debug===================================");
+		test1.error("error===================================");
+		test2.info("info===================================");
+		test2.warn("warn===================================");
+		test2.debug("debug===================================");
+		test2.error("error===================================");
 	}
 }
