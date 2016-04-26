@@ -3,8 +3,15 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>jw-mvn</groupId>
-		<artifactId>jw-mvn-spring</artifactId>
+		<artifactId>jw-mvn</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>jw-mvn-spring-extensible-xml</artifactId>
+	<artifactId>jw-mvn-breakrule</artifactId>
+	<dependencies>
+		<dependency>
+			<groupId>net.sf.json-lib</groupId>
+			<artifactId>json-lib</artifactId>
+			<version>2.4</version>
+		</dependency>
+	</dependencies>
 </project>

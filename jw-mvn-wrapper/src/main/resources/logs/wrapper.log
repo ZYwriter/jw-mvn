@@ -1,0 +1,94 @@
+STATUS | wrapper  | 2016/04/19 17:53:10 | --> Wrapper Started as Service
+STATUS | wrapper  | 2016/04/19 17:53:10 | Java Service Wrapper Standard Edition 64-bit 3.5.29
+STATUS | wrapper  | 2016/04/19 17:53:10 |   Copyright (C) 1999-2016 Tanuki Software, Ltd. All Rights Reserved.
+STATUS | wrapper  | 2016/04/19 17:53:10 |     http://wrapper.tanukisoftware.com
+NOTICE | wrapper  | 2016/04/19 17:53:10 | 
+NOTICE | wrapper  | 2016/04/19 17:53:10 | --------------------------------------------------------------------
+NOTICE | wrapper  | 2016/04/19 17:53:10 | Thank you for your interest in the Java Service Wrapper.
+NOTICE | wrapper  | 2016/04/19 17:53:10 | 
+NOTICE | wrapper  | 2016/04/19 17:53:10 | You are running with a full featured trial License Key which will
+NOTICE | wrapper  | 2016/04/19 17:53:10 | allow you to run or restart the Java Service Wrapper as many times
+NOTICE | wrapper  | 2016/04/19 17:53:10 | as you like.  Each invocation of the Wrapper will shutdown
+NOTICE | wrapper  | 2016/04/19 17:53:10 | automatically after 15 minutes.
+NOTICE | wrapper  | 2016/04/19 17:53:10 | 
+NOTICE | wrapper  | 2016/04/19 17:53:10 | This limited trial License Key is useful for quick configuration
+NOTICE | wrapper  | 2016/04/19 17:53:10 | tests on various machines without the need to request a trial
+NOTICE | wrapper  | 2016/04/19 17:53:10 | license.  If more time is required, you can also immediately obtain
+NOTICE | wrapper  | 2016/04/19 17:53:10 | a one-month Free trial license:
+NOTICE | wrapper  | 2016/04/19 17:53:10 |   http://wrapper.tanukisoftware.com/trial
+NOTICE | wrapper  | 2016/04/19 17:53:10 | 
+NOTICE | wrapper  | 2016/04/19 17:53:10 | The Java Service Wrapper requires a License Key to activate the
+NOTICE | wrapper  | 2016/04/19 17:53:10 | software.  License Keys can be purchased on the Java Service Wrapper
+NOTICE | wrapper  | 2016/04/19 17:53:10 | web site:
+NOTICE | wrapper  | 2016/04/19 17:53:10 |   http://wrapper.tanukisoftware.com/purchase
+NOTICE | wrapper  | 2016/04/19 17:53:10 | 
+NOTICE | wrapper  | 2016/04/19 17:53:10 | This trial License Key in intended for testing and development and
+NOTICE | wrapper  | 2016/04/19 17:53:10 | should not be used as part of a production environment.
+NOTICE | wrapper  | 2016/04/19 17:53:10 | --------------------------------------------------------------------
+NOTICE | wrapper  | 2016/04/19 17:53:10 | 
+STATUS | wrapper  | 2016/04/19 17:53:10 | 
+STATUS | wrapper  | 2016/04/19 17:53:11 | Launching a JVM...
+INFO   | jvm 1    | 2016/04/19 17:53:11 | WrapperManager: Initializing...
+INFO   | jvm 1    | 2016/04/19 17:53:12 | 四月 19, 2016 5:53:11 下午 org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO   | jvm 1    | 2016/04/19 17:53:12 | 信息: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@fcd23ae: startup date [Tue Apr 19 17:53:11 CST 2016]; root of context hierarchy
+INFO   | jvm 1    | 2016/04/19 17:53:12 | 四月 19, 2016 5:53:12 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO   | jvm 1    | 2016/04/19 17:53:12 | 信息: Loading XML bean definitions from URL [jar:file:/D:/local/wrapper/lib/sims2016derive-quotationtransfer-client-0.0.1-SNAPSHOT.jar!/jframework-fourcolor-application.xml]
+INFO   | jvm 1    | 2016/04/19 17:53:12 | 四月 19, 2016 5:53:12 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO   | jvm 1    | 2016/04/19 17:53:12 | 信息: Loading XML bean definitions from URL [jar:file:/D:/local/wrapper/lib/sims2016derive-quotationtransfer-client-0.0.1-SNAPSHOT.jar!/META-INF/spring/spring-fourcolor-rootcontext-quotationTransferClientContext.xml]
+INFO   | jvm 1    | 2016/04/19 17:53:12 | 四月 19, 2016 5:53:12 下午 org.springframework.core.io.support.PropertiesLoaderSupport loadProperties
+INFO   | jvm 1    | 2016/04/19 17:53:12 | 信息: Loading properties file from class path resource [jframework.properties]
+INFO   | jvm 1    | 2016/04/19 17:53:12 | 四月 19, 2016 5:53:12 下午 org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO   | jvm 1    | 2016/04/19 17:53:12 | 信息: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@192cbe8c: defining beans [org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,${jframework.application.name},jframework.config.RegistryConfig,jframework,rmi,quotationTransferClientContext,quotationTransferContext,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+STATUS | wrapperm | 2016/04/19 17:56:29 | Stopping the 行情传输应用程序 service...
+STATUS | wrapper  | 2016/04/19 17:56:30 | <-- Wrapper Stopped
+STATUS | wrapperm | 2016/04/19 17:56:31 | 行情传输应用程序 service stopped.
+STATUS | wrapperm | 2016/04/19 17:56:59 | The 行情传输应用程序 service was not started.
+STATUS | wrapperm | 2016/04/19 17:57:02 | 行情传输应用程序 service removed.
+STATUS | wrapperm | 2016/04/19 17:57:07 | 行情传输应用程序 service installed.
+STATUS | wrapperm | 2016/04/19 17:57:18 | Starting the 行情传输应用程序 service...
+STATUS | wrapper  | 2016/04/19 17:57:18 | --> Wrapper Started as Service
+STATUS | wrapper  | 2016/04/19 17:57:18 | Java Service Wrapper Standard Edition 64-bit 3.5.29
+STATUS | wrapper  | 2016/04/19 17:57:18 |   Copyright (C) 1999-2016 Tanuki Software, Ltd. All Rights Reserved.
+STATUS | wrapper  | 2016/04/19 17:57:18 |     http://wrapper.tanukisoftware.com
+NOTICE | wrapper  | 2016/04/19 17:57:18 | 
+NOTICE | wrapper  | 2016/04/19 17:57:18 | --------------------------------------------------------------------
+NOTICE | wrapper  | 2016/04/19 17:57:18 | Thank you for your interest in the Java Service Wrapper.
+NOTICE | wrapper  | 2016/04/19 17:57:18 | 
+NOTICE | wrapper  | 2016/04/19 17:57:18 | You are running with a full featured trial License Key which will
+NOTICE | wrapper  | 2016/04/19 17:57:18 | allow you to run or restart the Java Service Wrapper as many times
+NOTICE | wrapper  | 2016/04/19 17:57:18 | as you like.  Each invocation of the Wrapper will shutdown
+NOTICE | wrapper  | 2016/04/19 17:57:18 | automatically after 15 minutes.
+NOTICE | wrapper  | 2016/04/19 17:57:18 | 
+NOTICE | wrapper  | 2016/04/19 17:57:18 | This limited trial License Key is useful for quick configuration
+NOTICE | wrapper  | 2016/04/19 17:57:18 | tests on various machines without the need to request a trial
+NOTICE | wrapper  | 2016/04/19 17:57:18 | license.  If more time is required, you can also immediately obtain
+NOTICE | wrapper  | 2016/04/19 17:57:18 | a one-month Free trial license:
+NOTICE | wrapper  | 2016/04/19 17:57:18 |   http://wrapper.tanukisoftware.com/trial
+NOTICE | wrapper  | 2016/04/19 17:57:18 | 
+NOTICE | wrapper  | 2016/04/19 17:57:18 | The Java Service Wrapper requires a License Key to activate the
+NOTICE | wrapper  | 2016/04/19 17:57:18 | software.  License Keys can be purchased on the Java Service Wrapper
+NOTICE | wrapper  | 2016/04/19 17:57:18 | web site:
+NOTICE | wrapper  | 2016/04/19 17:57:18 |   http://wrapper.tanukisoftware.com/purchase
+NOTICE | wrapper  | 2016/04/19 17:57:18 | 
+NOTICE | wrapper  | 2016/04/19 17:57:18 | This trial License Key in intended for testing and development and
+NOTICE | wrapper  | 2016/04/19 17:57:18 | should not be used as part of a production environment.
+NOTICE | wrapper  | 2016/04/19 17:57:18 | --------------------------------------------------------------------
+NOTICE | wrapper  | 2016/04/19 17:57:18 | 
+STATUS | wrapper  | 2016/04/19 17:57:18 | 
+STATUS | wrapper  | 2016/04/19 17:57:18 | Launching a JVM...
+INFO   | jvm 1    | 2016/04/19 17:57:18 | WrapperManager: Initializing...
+INFO   | jvm 1    | 2016/04/19 17:57:19 | 四月 19, 2016 5:57:19 下午 org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO   | jvm 1    | 2016/04/19 17:57:19 | 信息: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@64e17c9c: startup date [Tue Apr 19 17:57:19 CST 2016]; root of context hierarchy
+INFO   | jvm 1    | 2016/04/19 17:57:19 | 四月 19, 2016 5:57:19 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO   | jvm 1    | 2016/04/19 17:57:19 | 信息: Loading XML bean definitions from URL [jar:file:/D:/local/wrapper/lib/sims2016derive-quotationtransfer-client-0.0.1-SNAPSHOT.jar!/jframework-fourcolor-application.xml]
+INFO   | jvm 1    | 2016/04/19 17:57:19 | 四月 19, 2016 5:57:19 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO   | jvm 1    | 2016/04/19 17:57:19 | 信息: Loading XML bean definitions from URL [jar:file:/D:/local/wrapper/lib/sims2016derive-quotationtransfer-client-0.0.1-SNAPSHOT.jar!/META-INF/spring/spring-fourcolor-rootcontext-quotationTransferClientContext.xml]
+INFO   | jvm 1    | 2016/04/19 17:57:19 | 四月 19, 2016 5:57:19 下午 org.springframework.core.io.support.PropertiesLoaderSupport loadProperties
+INFO   | jvm 1    | 2016/04/19 17:57:19 | 信息: Loading properties file from class path resource [jframework.properties]
+INFO   | jvm 1    | 2016/04/19 17:57:19 | 四月 19, 2016 5:57:19 下午 org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO   | jvm 1    | 2016/04/19 17:57:19 | 信息: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@28308c62: defining beans [org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,${jframework.application.name},jframework.config.RegistryConfig,jframework,rmi,quotationTransferClientContext,quotationTransferContext,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+STATUS | wrapperm | 2016/04/19 17:57:22 | 行情传输应用程序 service started.
+STATUS | wrapperm | 2016/04/19 17:58:12 | Stopping the 行情传输应用程序 service...
+STATUS | wrapper  | 2016/04/19 17:58:13 | <-- Wrapper Stopped
+STATUS | wrapperm | 2016/04/19 17:58:14 | 行情传输应用程序 service stopped.
+STATUS | wrapperm | 2016/04/19 17:58:17 | 行情传输应用程序 service removed.

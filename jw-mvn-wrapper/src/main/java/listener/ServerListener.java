@@ -20,7 +20,7 @@ public class ServerListener implements WrapperListener {
 	@Override
 	public void controlEvent(int event) {
 		if ((event == WrapperManager.WRAPPER_CTRL_LOGOFF_EVENT) && WrapperManager.isLaunchedAsService()) {
-			// Ignore
+			return;
 		} else {
 			WrapperManager.stop(0);
 		}
@@ -29,7 +29,13 @@ public class ServerListener implements WrapperListener {
 	@Override
 	public Integer start(String[] arg0) {
 		try {
-			server = new ServerSocket(8888);
+			Integer port = null;
+			if(null == arg0[0]){
+				port = Integer.parseInt(arg0[0].toString());
+			}else{
+				port = 8888;
+			}
+			server = new ServerSocket(port);
 			isRun = true;
 			System.out.println("Listener port: 8888");
 			while (isRun) {

@@ -7,11 +7,45 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>jw-mvn-wrapper</artifactId>
-	<dependencies>
-		<dependency>
-			<groupId>tanukisoft</groupId>
-			<artifactId>wrapper</artifactId>
-			<version>3.2.3</version>
-		</dependency>
-	</dependencies>
+	<build>
+		<resources>
+			<resource>
+				<directory>src/main/resources/server</directory>
+				<targetPath>${project.build.directory}/server</targetPath>
+				<filtering>false</filtering>
+			</resource>
+			<resource>
+				<directory>src/main/resources/bin</directory>
+				<targetPath>${project.build.directory}/bin</targetPath>
+				<filtering>false</filtering>
+			</resource>
+			<resource>
+				<directory>src/main/resources/logs</directory>
+				<targetPath>${project.build.directory}/logs</targetPath>
+				<filtering>true</filtering>
+			</resource>
+			<resource>
+				<directory>src/main/resources/wrap</directory>
+				<targetPath>${project.build.directory}/wrap</targetPath>
+				<filtering>false</filtering>
+			</resource>
+		</resources>
+		<plugins>
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<configuration>
+					<descriptor>src/main/assembly/assembly.xml</descriptor>
+				</configuration>
+				<executions>
+					<execution>
+						<id>make-assembly</id>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
 </project>

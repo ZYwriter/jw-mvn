@@ -1,0 +1,6 @@
+WARN   | wrapper  | 2016/04/11 17:22:01 | Configuration file, D:\local\wrapper\conf\wrapper.conf, contains a problem on line #213 and could not be read. (Invalid multibyte sequence.)
+FATAL  | wrapper  | 2016/04/11 17:22:01 | Failed to load configuration: D:\local\wrapper\conf\wrapper.conf
+WARN   | wrapper  | 2016/04/11 17:22:20 | Configuration file, D:\local\wrapper\conf\wrapper.conf, contains a problem on line #213 and could not be read. (Invalid multibyte sequence.)
+FATAL  | wrapper  | 2016/04/11 17:22:20 | Failed to load configuration: D:\local\wrapper\conf\wrapper.conf
+WARN   | wrapper  | 2016/04/11 17:22:38 | Configuration file, D:\local\wrapper\conf\wrapper.conf, contains a problem on line #213 and could not be read. (Invalid multibyte sequence.)
+FATAL  | wrapper  | 2016/04/11 17:22:38 | Failed to load configuration: D:\local\wrapper\conf\wrapper.conf
