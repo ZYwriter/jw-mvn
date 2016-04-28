@@ -19,6 +19,7 @@
 		<module>jw-mvn-httpclient</module>
 		<module>jw-mvn-jctp64</module>
 		<module>jw-mvn-bridj</module>
+		<module>jw-mvn-udp</module>
 	</modules>
 	<dependencies>
 		<dependency>
