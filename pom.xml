@@ -12,7 +12,6 @@
 		<module>jw-mvn-spring</module>
 		<module>jw-mvn-log</module>
 		<module>jw-mvn-pool</module>
-		<module>jw-mvn-jni</module>
 		<module>jw-mvn-breakrule</module>
 		<module>jw-mvn-jsoup</module>
 		<module>jw-mvn-json</module>
@@ -20,6 +19,9 @@
 		<module>jw-mvn-jctp64</module>
 		<module>jw-mvn-bridj</module>
 		<module>jw-mvn-udp</module>
+		<module>jw-mvn-jna-demo</module>
+		<module>jw-mvn-jna-jctp</module>
+		<module>jw-mvn-jctp32-64</module>
 	</modules>
 	<dependencies>
 		<dependency>

@@ -6337,7 +6337,11 @@ public abstract class Pointer<T> implements Comparable<Pointer<?>>, Iterable<T>
 				} else {
 					customCharset = Charset.forName("GBK");
 				}
-				return new String(getBytesAtOffset(byteOffset, safeIntCast(len)), charset(customCharset));
+				String retrunName = new String(getBytesAtOffset(byteOffset, safeIntCast(len)), charset(customCharset));
+				if(null == retrunName){
+					retrunName = "";
+				}
+				return retrunName;
 			case WideC:
 				len = wcslen(byteOffset);
 				return new String(getCharsAtOffset(byteOffset, safeIntCast(len)));
@@ -6570,7 +6574,12 @@ public abstract class Pointer<T> implements Comparable<Pointer<?>>, Iterable<T>
 	 * See {@link Pointer#getCStringAtOffset(long)}, {@link Pointer#getString(StringType)} and {@link Pointer#getStringAtOffset(long, StringType, Charset)} for more options
 	 */
 	public String getCString() {
-		return getCStringAtOffset(0);
+		try {
+			return getCStringAtOffset(0);
+		} catch (Exception e) {
+			System.out.println("ÄãÂè±Æ");
+			return "";
+		}
 	}
 	
 	/**

@@ -1,11 +1,11 @@
-package tradeapi;
+package thostftdctraderapi;
 import org.bridj.IntValuedEnum;
 import org.bridj.Pointer;
 import org.bridj.ann.Library;
 import org.bridj.ann.Virtual;
 import org.bridj.cpp.CPPObject;
 
-import mdapi.ThostFtdcMdApiLibrary.THOST_TE_RESUME_TYPE;
+import thostftdcuserapidatatype.ThostFtdcUserApiDataTypeLibrary.THOST_TE_RESUME_TYPE;
 import thostftdcuserapistruct.CThostFtdcFensUserInfoField;
 import thostftdcuserapistruct.CThostFtdcInputCombActionField;
 import thostftdcuserapistruct.CThostFtdcInputExecOrderActionField;
@@ -87,7 +87,7 @@ public class CThostFtdcTraderApi extends CPPObject {
 	 * Original signature : <code>CThostFtdcTraderApi* CreateFtdcTraderApi(const char*)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:349</i>
 	 */
-	public static native Pointer<CThostFtdcTraderApi > CreateFtdcTraderApi(Pointer<Byte > pszFlowPath);
+	public static native Pointer<CThostFtdcTraderApi> CreateFtdcTraderApi(Pointer<Byte> pszFlowPath);
 	/**
 	 * @remark \u4e0d\u518d\u4f7f\u7528\u672c\u63a5\u53e3\u5bf9\u8c61\u65f6,\u8c03\u7528\u8be5\u51fd\u6570\u5220\u9664\u63a5\u53e3\u5bf9\u8c61<br>
 	 * Original signature : <code>void Release()</code><br>
@@ -115,504 +115,504 @@ public class CThostFtdcTraderApi extends CPPObject {
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:366</i>
 	 */
 	@Virtual(3) 
-	public native Pointer<Byte > GetTradingDay();
+	public native Pointer<Byte> GetTradingDay();
 	/**
 	 * @remark \u201ctcp\u201d\u4ee3\u8868\u4f20\u8f93\u534f\u8bae\uff0c\u201c127.0.0.1\u201d\u4ee3\u8868\u670d\u52a1\u5668\u5730\u5740\u3002\u201d17001\u201d\u4ee3\u8868\u670d\u52a1\u5668\u7aef\u53e3\u53f7\u3002<br>
 	 * Original signature : <code>void RegisterFront(char*)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:372</i>
 	 */
 	@Virtual(4) 
-	public native void RegisterFront(Pointer<Byte > pszFrontAddress);
+	public native void RegisterFront(Pointer<Byte> pszFrontAddress);
 	/**
 	 * @remark RegisterNameServer\u4f18\u5148\u4e8eRegisterFront<br>
 	 * Original signature : <code>void RegisterNameServer(char*)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:379</i>
 	 */
 	@Virtual(5) 
-	public native void RegisterNameServer(Pointer<Byte > pszNsAddress);
+	public native void RegisterNameServer(Pointer<Byte> pszNsAddress);
 	/**
 	 * @param pFensUserInfo\uff1a\u7528\u6237\u4fe1\u606f\u3002<br>
 	 * Original signature : <code>void RegisterFensUserInfo(CThostFtdcFensUserInfoField*)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:383</i>
 	 */
 	@Virtual(6) 
-	public native void RegisterFensUserInfo(Pointer<CThostFtdcFensUserInfoField > pFensUserInfo);
+	public native void RegisterFensUserInfo(Pointer<CThostFtdcFensUserInfoField> pFensUserInfo);
 	/**
 	 * @param pSpi \u6d3e\u751f\u81ea\u56de\u8c03\u63a5\u53e3\u7c7b\u7684\u5b9e\u4f8b<br>
 	 * Original signature : <code>void RegisterSpi(CThostFtdcTraderSpi*)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:387</i>
 	 */
 	@Virtual(7) 
-	public native void RegisterSpi(Pointer<CThostFtdcTraderSpi > pSpi);
+	public native void RegisterSpi(Pointer<CThostFtdcTraderSpi> pSpi);
 	/**
 	 * @remark \u8be5\u65b9\u6cd5\u8981\u5728Init\u65b9\u6cd5\u524d\u8c03\u7528\u3002\u82e5\u4e0d\u8c03\u7528\u5219\u4e0d\u4f1a\u6536\u5230\u79c1\u6709\u6d41\u7684\u6570\u636e\u3002<br>
 	 * Original signature : <code>void SubscribePrivateTopic(THOST_TE_RESUME_TYPE)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:395</i>
 	 */
 	@Virtual(8) 
-	public native void SubscribePrivateTopic(IntValuedEnum<THOST_TE_RESUME_TYPE > nResumeType);
+	public native void SubscribePrivateTopic(IntValuedEnum<THOST_TE_RESUME_TYPE> nResumeType);
 	/**
 	 * @remark \u8be5\u65b9\u6cd5\u8981\u5728Init\u65b9\u6cd5\u524d\u8c03\u7528\u3002\u82e5\u4e0d\u8c03\u7528\u5219\u4e0d\u4f1a\u6536\u5230\u516c\u5171\u6d41\u7684\u6570\u636e\u3002<br>
 	 * Original signature : <code>void SubscribePublicTopic(THOST_TE_RESUME_TYPE)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:403</i>
 	 */
 	@Virtual(9) 
-	public native void SubscribePublicTopic(IntValuedEnum<THOST_TE_RESUME_TYPE > nResumeType);
+	public native void SubscribePublicTopic(IntValuedEnum<THOST_TE_RESUME_TYPE> nResumeType);
 	/**
 	 * \u5ba2\u6237\u7aef\u8ba4\u8bc1\u8bf7\u6c42<br>
 	 * Original signature : <code>int ReqAuthenticate(CThostFtdcReqAuthenticateField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:406</i>
 	 */
 	@Virtual(10) 
-	public native int ReqAuthenticate(Pointer<CThostFtdcReqAuthenticateField > pReqAuthenticateField, int nRequestID);
+	public native int ReqAuthenticate(Pointer<CThostFtdcReqAuthenticateField> pReqAuthenticateField, int nRequestID);
 	/**
 	 * \u7528\u6237\u767b\u5f55\u8bf7\u6c42<br>
 	 * Original signature : <code>int ReqUserLogin(CThostFtdcReqUserLoginField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:409</i>
 	 */
 	@Virtual(11) 
-	public native int ReqUserLogin(Pointer<CThostFtdcReqUserLoginField > pReqUserLoginField, int nRequestID);
+	public native int ReqUserLogin(Pointer<CThostFtdcReqUserLoginField> pReqUserLoginField, int nRequestID);
 	/**
 	 * \u767b\u51fa\u8bf7\u6c42<br>
 	 * Original signature : <code>int ReqUserLogout(CThostFtdcUserLogoutField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:413</i>
 	 */
 	@Virtual(12) 
-	public native int ReqUserLogout(Pointer<CThostFtdcUserLogoutField > pUserLogout, int nRequestID);
+	public native int ReqUserLogout(Pointer<CThostFtdcUserLogoutField> pUserLogout, int nRequestID);
 	/**
 	 * \u7528\u6237\u53e3\u4ee4\u66f4\u65b0\u8bf7\u6c42<br>
 	 * Original signature : <code>int ReqUserPasswordUpdate(CThostFtdcUserPasswordUpdateField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:416</i>
 	 */
 	@Virtual(13) 
-	public native int ReqUserPasswordUpdate(Pointer<CThostFtdcUserPasswordUpdateField > pUserPasswordUpdate, int nRequestID);
+	public native int ReqUserPasswordUpdate(Pointer<CThostFtdcUserPasswordUpdateField> pUserPasswordUpdate, int nRequestID);
 	/**
 	 * \u8d44\u91d1\u8d26\u6237\u53e3\u4ee4\u66f4\u65b0\u8bf7\u6c42<br>
 	 * Original signature : <code>int ReqTradingAccountPasswordUpdate(CThostFtdcTradingAccountPasswordUpdateField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:419</i>
 	 */
 	@Virtual(14) 
-	public native int ReqTradingAccountPasswordUpdate(Pointer<CThostFtdcTradingAccountPasswordUpdateField > pTradingAccountPasswordUpdate, int nRequestID);
+	public native int ReqTradingAccountPasswordUpdate(Pointer<CThostFtdcTradingAccountPasswordUpdateField> pTradingAccountPasswordUpdate, int nRequestID);
 	/**
 	 * \u62a5\u5355\u5f55\u5165\u8bf7\u6c42<br>
 	 * Original signature : <code>int ReqOrderInsert(CThostFtdcInputOrderField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:422</i>
 	 */
 	@Virtual(15) 
-	public native int ReqOrderInsert(Pointer<CThostFtdcInputOrderField > pInputOrder, int nRequestID);
+	public native int ReqOrderInsert(Pointer<CThostFtdcInputOrderField> pInputOrder, int nRequestID);
 	/**
 	 * \u9884\u57cb\u5355\u5f55\u5165\u8bf7\u6c42<br>
 	 * Original signature : <code>int ReqParkedOrderInsert(CThostFtdcParkedOrderField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:425</i>
 	 */
 	@Virtual(16) 
-	public native int ReqParkedOrderInsert(Pointer<CThostFtdcParkedOrderField > pParkedOrder, int nRequestID);
+	public native int ReqParkedOrderInsert(Pointer<CThostFtdcParkedOrderField> pParkedOrder, int nRequestID);
 	/**
 	 * \u9884\u57cb\u64a4\u5355\u5f55\u5165\u8bf7\u6c42<br>
 	 * Original signature : <code>int ReqParkedOrderAction(CThostFtdcParkedOrderActionField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:428</i>
 	 */
 	@Virtual(17) 
-	public native int ReqParkedOrderAction(Pointer<CThostFtdcParkedOrderActionField > pParkedOrderAction, int nRequestID);
+	public native int ReqParkedOrderAction(Pointer<CThostFtdcParkedOrderActionField> pParkedOrderAction, int nRequestID);
 	/**
 	 * \u62a5\u5355\u64cd\u4f5c\u8bf7\u6c42<br>
 	 * Original signature : <code>int ReqOrderAction(CThostFtdcInputOrderActionField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:431</i>
 	 */
 	@Virtual(18) 
-	public native int ReqOrderAction(Pointer<CThostFtdcInputOrderActionField > pInputOrderAction, int nRequestID);
+	public native int ReqOrderAction(Pointer<CThostFtdcInputOrderActionField> pInputOrderAction, int nRequestID);
 	/**
 	 * \u67e5\u8be2\u6700\u5927\u62a5\u5355\u6570\u91cf\u8bf7\u6c42<br>
 	 * Original signature : <code>int ReqQueryMaxOrderVolume(CThostFtdcQueryMaxOrderVolumeField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:434</i>
 	 */
 	@Virtual(19) 
-	public native int ReqQueryMaxOrderVolume(Pointer<CThostFtdcQueryMaxOrderVolumeField > pQueryMaxOrderVolume, int nRequestID);
+	public native int ReqQueryMaxOrderVolume(Pointer<CThostFtdcQueryMaxOrderVolumeField> pQueryMaxOrderVolume, int nRequestID);
 	/**
 	 * \u6295\u8d44\u8005\u7ed3\u7b97\u7ed3\u679c\u786e\u8ba4<br>
 	 * Original signature : <code>int ReqSettlementInfoConfirm(CThostFtdcSettlementInfoConfirmField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:437</i>
 	 */
 	@Virtual(20) 
-	public native int ReqSettlementInfoConfirm(Pointer<CThostFtdcSettlementInfoConfirmField > pSettlementInfoConfirm, int nRequestID);
+	public native int ReqSettlementInfoConfirm(Pointer<CThostFtdcSettlementInfoConfirmField> pSettlementInfoConfirm, int nRequestID);
 	/**
 	 * \u8bf7\u6c42\u5220\u9664\u9884\u57cb\u5355<br>
 	 * Original signature : <code>int ReqRemoveParkedOrder(CThostFtdcRemoveParkedOrderField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:440</i>
 	 */
 	@Virtual(21) 
-	public native int ReqRemoveParkedOrder(Pointer<CThostFtdcRemoveParkedOrderField > pRemoveParkedOrder, int nRequestID);
+	public native int ReqRemoveParkedOrder(Pointer<CThostFtdcRemoveParkedOrderField> pRemoveParkedOrder, int nRequestID);
 	/**
 	 * \u8bf7\u6c42\u5220\u9664\u9884\u57cb\u64a4\u5355<br>
 	 * Original signature : <code>int ReqRemoveParkedOrderAction(CThostFtdcRemoveParkedOrderActionField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:443</i>
 	 */
 	@Virtual(22) 
-	public native int ReqRemoveParkedOrderAction(Pointer<CThostFtdcRemoveParkedOrderActionField > pRemoveParkedOrderAction, int nRequestID);
+	public native int ReqRemoveParkedOrderAction(Pointer<CThostFtdcRemoveParkedOrderActionField> pRemoveParkedOrderAction, int nRequestID);
 	/**
 	 * \u6267\u884c\u5ba3\u544a\u5f55\u5165\u8bf7\u6c42<br>
 	 * Original signature : <code>int ReqExecOrderInsert(CThostFtdcInputExecOrderField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:446</i>
 	 */
 	@Virtual(23) 
-	public native int ReqExecOrderInsert(Pointer<CThostFtdcInputExecOrderField > pInputExecOrder, int nRequestID);
+	public native int ReqExecOrderInsert(Pointer<CThostFtdcInputExecOrderField> pInputExecOrder, int nRequestID);
 	/**
 	 * \u6267\u884c\u5ba3\u544a\u64cd\u4f5c\u8bf7\u6c42<br>
 	 * Original signature : <code>int ReqExecOrderAction(CThostFtdcInputExecOrderActionField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:449</i>
 	 */
 	@Virtual(24) 
-	public native int ReqExecOrderAction(Pointer<CThostFtdcInputExecOrderActionField > pInputExecOrderAction, int nRequestID);
+	public native int ReqExecOrderAction(Pointer<CThostFtdcInputExecOrderActionField> pInputExecOrderAction, int nRequestID);
 	/**
 	 * \u8be2\u4ef7\u5f55\u5165\u8bf7\u6c42<br>
 	 * Original signature : <code>int ReqForQuoteInsert(CThostFtdcInputForQuoteField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:452</i>
 	 */
 	@Virtual(25) 
-	public native int ReqForQuoteInsert(Pointer<CThostFtdcInputForQuoteField > pInputForQuote, int nRequestID);
+	public native int ReqForQuoteInsert(Pointer<CThostFtdcInputForQuoteField> pInputForQuote, int nRequestID);
 	/**
 	 * \u62a5\u4ef7\u5f55\u5165\u8bf7\u6c42<br>
 	 * Original signature : <code>int ReqQuoteInsert(CThostFtdcInputQuoteField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:455</i>
 	 */
 	@Virtual(26) 
-	public native int ReqQuoteInsert(Pointer<CThostFtdcInputQuoteField > pInputQuote, int nRequestID);
+	public native int ReqQuoteInsert(Pointer<CThostFtdcInputQuoteField> pInputQuote, int nRequestID);
 	/**
 	 * \u62a5\u4ef7\u64cd\u4f5c\u8bf7\u6c42<br>
 	 * Original signature : <code>int ReqQuoteAction(CThostFtdcInputQuoteActionField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:458</i>
 	 */
 	@Virtual(27) 
-	public native int ReqQuoteAction(Pointer<CThostFtdcInputQuoteActionField > pInputQuoteAction, int nRequestID);
+	public native int ReqQuoteAction(Pointer<CThostFtdcInputQuoteActionField> pInputQuoteAction, int nRequestID);
 	/**
 	 * \u7533\u8bf7\u7ec4\u5408\u5f55\u5165\u8bf7\u6c42<br>
 	 * Original signature : <code>int ReqCombActionInsert(CThostFtdcInputCombActionField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:461</i>
 	 */
 	@Virtual(28) 
-	public native int ReqCombActionInsert(Pointer<CThostFtdcInputCombActionField > pInputCombAction, int nRequestID);
+	public native int ReqCombActionInsert(Pointer<CThostFtdcInputCombActionField> pInputCombAction, int nRequestID);
 	/**
 	 * \u8bf7\u6c42\u67e5\u8be2\u62a5\u5355<br>
 	 * Original signature : <code>int ReqQryOrder(CThostFtdcQryOrderField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:464</i>
 	 */
 	@Virtual(29) 
-	public native int ReqQryOrder(Pointer<CThostFtdcQryOrderField > pQryOrder, int nRequestID);
+	public native int ReqQryOrder(Pointer<CThostFtdcQryOrderField> pQryOrder, int nRequestID);
 	/**
 	 * \u8bf7\u6c42\u67e5\u8be2\u6210\u4ea4<br>
 	 * Original signature : <code>int ReqQryTrade(CThostFtdcQryTradeField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:467</i>
 	 */
 	@Virtual(30) 
-	public native int ReqQryTrade(Pointer<CThostFtdcQryTradeField > pQryTrade, int nRequestID);
+	public native int ReqQryTrade(Pointer<CThostFtdcQryTradeField> pQryTrade, int nRequestID);
 	/**
 	 * \u8bf7\u6c42\u67e5\u8be2\u6295\u8d44\u8005\u6301\u4ed3<br>
 	 * Original signature : <code>int ReqQryInvestorPosition(CThostFtdcQryInvestorPositionField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:470</i>
 	 */
 	@Virtual(31) 
-	public native int ReqQryInvestorPosition(Pointer<CThostFtdcQryInvestorPositionField > pQryInvestorPosition, int nRequestID);
+	public native int ReqQryInvestorPosition(Pointer<CThostFtdcQryInvestorPositionField> pQryInvestorPosition, int nRequestID);
 	/**
 	 * \u8bf7\u6c42\u67e5\u8be2\u8d44\u91d1\u8d26\u6237<br>
 	 * Original signature : <code>int ReqQryTradingAccount(CThostFtdcQryTradingAccountField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:473</i>
 	 */
 	@Virtual(32) 
-	public native int ReqQryTradingAccount(Pointer<CThostFtdcQryTradingAccountField > pQryTradingAccount, int nRequestID);
+	public native int ReqQryTradingAccount(Pointer<CThostFtdcQryTradingAccountField> pQryTradingAccount, int nRequestID);
 	/**
 	 * \u8bf7\u6c42\u67e5\u8be2\u6295\u8d44\u8005<br>
 	 * Original signature : <code>int ReqQryInvestor(CThostFtdcQryInvestorField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:476</i>
 	 */
 	@Virtual(33) 
-	public native int ReqQryInvestor(Pointer<CThostFtdcQryInvestorField > pQryInvestor, int nRequestID);
+	public native int ReqQryInvestor(Pointer<CThostFtdcQryInvestorField> pQryInvestor, int nRequestID);
 	/**
 	 * \u8bf7\u6c42\u67e5\u8be2\u4ea4\u6613\u7f16\u7801<br>
 	 * Original signature : <code>int ReqQryTradingCode(CThostFtdcQryTradingCodeField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:479</i>
 	 */
 	@Virtual(34) 
-	public native int ReqQryTradingCode(Pointer<CThostFtdcQryTradingCodeField > pQryTradingCode, int nRequestID);
+	public native int ReqQryTradingCode(Pointer<CThostFtdcQryTradingCodeField> pQryTradingCode, int nRequestID);
 	/**
 	 * \u8bf7\u6c42\u67e5\u8be2\u5408\u7ea6\u4fdd\u8bc1\u91d1\u7387<br>
 	 * Original signature : <code>int ReqQryInstrumentMarginRate(CThostFtdcQryInstrumentMarginRateField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:482</i>
 	 */
 	@Virtual(35) 
-	public native int ReqQryInstrumentMarginRate(Pointer<CThostFtdcQryInstrumentMarginRateField > pQryInstrumentMarginRate, int nRequestID);
+	public native int ReqQryInstrumentMarginRate(Pointer<CThostFtdcQryInstrumentMarginRateField> pQryInstrumentMarginRate, int nRequestID);
 	/**
 	 * \u8bf7\u6c42\u67e5\u8be2\u5408\u7ea6\u624b\u7eed\u8d39\u7387<br>
 	 * Original signature : <code>int ReqQryInstrumentCommissionRate(CThostFtdcQryInstrumentCommissionRateField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:485</i>
 	 */
 	@Virtual(36) 
-	public native int ReqQryInstrumentCommissionRate(Pointer<CThostFtdcQryInstrumentCommissionRateField > pQryInstrumentCommissionRate, int nRequestID);
+	public native int ReqQryInstrumentCommissionRate(Pointer<CThostFtdcQryInstrumentCommissionRateField> pQryInstrumentCommissionRate, int nRequestID);
 	/**
 	 * \u8bf7\u6c42\u67e5\u8be2\u4ea4\u6613\u6240<br>
 	 * Original signature : <code>int ReqQryExchange(CThostFtdcQryExchangeField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:488</i>
 	 */
 	@Virtual(37) 
-	public native int ReqQryExchange(Pointer<CThostFtdcQryExchangeField > pQryExchange, int nRequestID);
+	public native int ReqQryExchange(Pointer<CThostFtdcQryExchangeField> pQryExchange, int nRequestID);
 	/**
 	 * \u8bf7\u6c42\u67e5\u8be2\u4ea7\u54c1<br>
 	 * Original signature : <code>int ReqQryProduct(CThostFtdcQryProductField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:491</i>
 	 */
 	@Virtual(38) 
-	public native int ReqQryProduct(Pointer<CThostFtdcQryProductField > pQryProduct, int nRequestID);
+	public native int ReqQryProduct(Pointer<CThostFtdcQryProductField> pQryProduct, int nRequestID);
 	/**
 	 * \u8bf7\u6c42\u67e5\u8be2\u5408\u7ea6<br>
 	 * Original signature : <code>int ReqQryInstrument(CThostFtdcQryInstrumentField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:494</i>
 	 */
 	@Virtual(39) 
-	public native int ReqQryInstrument(Pointer<CThostFtdcQryInstrumentField > pQryInstrument, int nRequestID);
+	public native int ReqQryInstrument(Pointer<CThostFtdcQryInstrumentField> pQryInstrument, int nRequestID);
 	/**
 	 * \u8bf7\u6c42\u67e5\u8be2\u884c\u60c5<br>
 	 * Original signature : <code>int ReqQryDepthMarketData(CThostFtdcQryDepthMarketDataField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:497</i>
 	 */
 	@Virtual(40) 
-	public native int ReqQryDepthMarketData(Pointer<CThostFtdcQryDepthMarketDataField > pQryDepthMarketData, int nRequestID);
+	public native int ReqQryDepthMarketData(Pointer<CThostFtdcQryDepthMarketDataField> pQryDepthMarketData, int nRequestID);
 	/**
 	 * \u8bf7\u6c42\u67e5\u8be2\u6295\u8d44\u8005\u7ed3\u7b97\u7ed3\u679c<br>
 	 * Original signature : <code>int ReqQrySettlementInfo(CThostFtdcQrySettlementInfoField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:500</i>
 	 */
 	@Virtual(41) 
-	public native int ReqQrySettlementInfo(Pointer<CThostFtdcQrySettlementInfoField > pQrySettlementInfo, int nRequestID);
+	public native int ReqQrySettlementInfo(Pointer<CThostFtdcQrySettlementInfoField> pQrySettlementInfo, int nRequestID);
 	/**
 	 * \u8bf7\u6c42\u67e5\u8be2\u8f6c\u5e10\u94f6\u884c<br>
 	 * Original signature : <code>int ReqQryTransferBank(CThostFtdcQryTransferBankField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:503</i>
 	 */
 	@Virtual(42) 
-	public native int ReqQryTransferBank(Pointer<CThostFtdcQryTransferBankField > pQryTransferBank, int nRequestID);
+	public native int ReqQryTransferBank(Pointer<CThostFtdcQryTransferBankField> pQryTransferBank, int nRequestID);
 	/**
 	 * \u8bf7\u6c42\u67e5\u8be2\u6295\u8d44\u8005\u6301\u4ed3\u660e\u7ec6<br>
 	 * Original signature : <code>int ReqQryInvestorPositionDetail(CThostFtdcQryInvestorPositionDetailField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:506</i>
 	 */
 	@Virtual(43) 
-	public native int ReqQryInvestorPositionDetail(Pointer<CThostFtdcQryInvestorPositionDetailField > pQryInvestorPositionDetail, int nRequestID);
+	public native int ReqQryInvestorPositionDetail(Pointer<CThostFtdcQryInvestorPositionDetailField> pQryInvestorPositionDetail, int nRequestID);
 	/**
 	 * \u8bf7\u6c42\u67e5\u8be2\u5ba2\u6237\u901a\u77e5<br>
 	 * Original signature : <code>int ReqQryNotice(CThostFtdcQryNoticeField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:509</i>
 	 */
 	@Virtual(44) 
-	public native int ReqQryNotice(Pointer<CThostFtdcQryNoticeField > pQryNotice, int nRequestID);
+	public native int ReqQryNotice(Pointer<CThostFtdcQryNoticeField> pQryNotice, int nRequestID);
 	/**
 	 * \u8bf7\u6c42\u67e5\u8be2\u7ed3\u7b97\u4fe1\u606f\u786e\u8ba4<br>
 	 * Original signature : <code>int ReqQrySettlementInfoConfirm(CThostFtdcQrySettlementInfoConfirmField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:512</i>
 	 */
 	@Virtual(45) 
-	public native int ReqQrySettlementInfoConfirm(Pointer<CThostFtdcQrySettlementInfoConfirmField > pQrySettlementInfoConfirm, int nRequestID);
+	public native int ReqQrySettlementInfoConfirm(Pointer<CThostFtdcQrySettlementInfoConfirmField> pQrySettlementInfoConfirm, int nRequestID);
 	/**
 	 * \u8bf7\u6c42\u67e5\u8be2\u6295\u8d44\u8005\u6301\u4ed3\u660e\u7ec6<br>
 	 * Original signature : <code>int ReqQryInvestorPositionCombineDetail(CThostFtdcQryInvestorPositionCombineDetailField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:515</i>
 	 */
 	@Virtual(46) 
-	public native int ReqQryInvestorPositionCombineDetail(Pointer<CThostFtdcQryInvestorPositionCombineDetailField > pQryInvestorPositionCombineDetail, int nRequestID);
+	public native int ReqQryInvestorPositionCombineDetail(Pointer<CThostFtdcQryInvestorPositionCombineDetailField> pQryInvestorPositionCombineDetail, int nRequestID);
 	/**
 	 * \u8bf7\u6c42\u67e5\u8be2\u4fdd\u8bc1\u91d1\u76d1\u7ba1\u7cfb\u7edf\u7ecf\u7eaa\u516c\u53f8\u8d44\u91d1\u8d26\u6237\u5bc6\u94a5<br>
 	 * Original signature : <code>int ReqQryCFMMCTradingAccountKey(CThostFtdcQryCFMMCTradingAccountKeyField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:518</i>
 	 */
 	@Virtual(47) 
-	public native int ReqQryCFMMCTradingAccountKey(Pointer<CThostFtdcQryCFMMCTradingAccountKeyField > pQryCFMMCTradingAccountKey, int nRequestID);
+	public native int ReqQryCFMMCTradingAccountKey(Pointer<CThostFtdcQryCFMMCTradingAccountKeyField> pQryCFMMCTradingAccountKey, int nRequestID);
 	/**
 	 * \u8bf7\u6c42\u67e5\u8be2\u4ed3\u5355\u6298\u62b5\u4fe1\u606f<br>
 	 * Original signature : <code>int ReqQryEWarrantOffset(CThostFtdcQryEWarrantOffsetField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:521</i>
 	 */
 	@Virtual(48) 
-	public native int ReqQryEWarrantOffset(Pointer<CThostFtdcQryEWarrantOffsetField > pQryEWarrantOffset, int nRequestID);
+	public native int ReqQryEWarrantOffset(Pointer<CThostFtdcQryEWarrantOffsetField> pQryEWarrantOffset, int nRequestID);
 	/**
 	 * \u8bf7\u6c42\u67e5\u8be2\u6295\u8d44\u8005\u54c1\u79cd/\u8de8\u54c1\u79cd\u4fdd\u8bc1\u91d1<br>
 	 * Original signature : <code>int ReqQryInvestorProductGroupMargin(CThostFtdcQryInvestorProductGroupMarginField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:524</i>
 	 */
 	@Virtual(49) 
-	public native int ReqQryInvestorProductGroupMargin(Pointer<CThostFtdcQryInvestorProductGroupMarginField > pQryInvestorProductGroupMargin, int nRequestID);
+	public native int ReqQryInvestorProductGroupMargin(Pointer<CThostFtdcQryInvestorProductGroupMarginField> pQryInvestorProductGroupMargin, int nRequestID);
 	/**
 	 * \u8bf7\u6c42\u67e5\u8be2\u4ea4\u6613\u6240\u4fdd\u8bc1\u91d1\u7387<br>
 	 * Original signature : <code>int ReqQryExchangeMarginRate(CThostFtdcQryExchangeMarginRateField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:527</i>
 	 */
 	@Virtual(50) 
-	public native int ReqQryExchangeMarginRate(Pointer<CThostFtdcQryExchangeMarginRateField > pQryExchangeMarginRate, int nRequestID);
+	public native int ReqQryExchangeMarginRate(Pointer<CThostFtdcQryExchangeMarginRateField> pQryExchangeMarginRate, int nRequestID);
 	/**
 	 * \u8bf7\u6c42\u67e5\u8be2\u4ea4\u6613\u6240\u8c03\u6574\u4fdd\u8bc1\u91d1\u7387<br>
 	 * Original signature : <code>int ReqQryExchangeMarginRateAdjust(CThostFtdcQryExchangeMarginRateAdjustField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:530</i>
 	 */
 	@Virtual(51) 
-	public native int ReqQryExchangeMarginRateAdjust(Pointer<CThostFtdcQryExchangeMarginRateAdjustField > pQryExchangeMarginRateAdjust, int nRequestID);
+	public native int ReqQryExchangeMarginRateAdjust(Pointer<CThostFtdcQryExchangeMarginRateAdjustField> pQryExchangeMarginRateAdjust, int nRequestID);
 	/**
 	 * \u8bf7\u6c42\u67e5\u8be2\u6c47\u7387<br>
 	 * Original signature : <code>int ReqQryExchangeRate(CThostFtdcQryExchangeRateField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:533</i>
 	 */
 	@Virtual(52) 
-	public native int ReqQryExchangeRate(Pointer<CThostFtdcQryExchangeRateField > pQryExchangeRate, int nRequestID);
+	public native int ReqQryExchangeRate(Pointer<CThostFtdcQryExchangeRateField> pQryExchangeRate, int nRequestID);
 	/**
 	 * \u8bf7\u6c42\u67e5\u8be2\u4e8c\u7ea7\u4ee3\u7406\u64cd\u4f5c\u5458\u94f6\u671f\u6743\u9650<br>
 	 * Original signature : <code>int ReqQrySecAgentACIDMap(CThostFtdcQrySecAgentACIDMapField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:536</i>
 	 */
 	@Virtual(53) 
-	public native int ReqQrySecAgentACIDMap(Pointer<CThostFtdcQrySecAgentACIDMapField > pQrySecAgentACIDMap, int nRequestID);
+	public native int ReqQrySecAgentACIDMap(Pointer<CThostFtdcQrySecAgentACIDMapField> pQrySecAgentACIDMap, int nRequestID);
 	/**
 	 * \u8bf7\u6c42\u67e5\u8be2\u4ea7\u54c1\u7ec4<br>
 	 * Original signature : <code>int ReqQryProductGroup(CThostFtdcQryProductGroupField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:539</i>
 	 */
 	@Virtual(54) 
-	public native int ReqQryProductGroup(Pointer<CThostFtdcQryProductGroupField > pQryProductGroup, int nRequestID);
+	public native int ReqQryProductGroup(Pointer<CThostFtdcQryProductGroupField> pQryProductGroup, int nRequestID);
 	/**
 	 * \u8bf7\u6c42\u67e5\u8be2\u62a5\u5355\u624b\u7eed\u8d39<br>
 	 * Original signature : <code>int ReqQryInstrumentOrderCommRate(CThostFtdcQryInstrumentOrderCommRateField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:542</i>
 	 */
 	@Virtual(55) 
-	public native int ReqQryInstrumentOrderCommRate(Pointer<CThostFtdcQryInstrumentOrderCommRateField > pQryInstrumentOrderCommRate, int nRequestID);
+	public native int ReqQryInstrumentOrderCommRate(Pointer<CThostFtdcQryInstrumentOrderCommRateField> pQryInstrumentOrderCommRate, int nRequestID);
 	/**
 	 * \u8bf7\u6c42\u67e5\u8be2\u671f\u6743\u4ea4\u6613\u6210\u672c<br>
 	 * Original signature : <code>int ReqQryOptionInstrTradeCost(CThostFtdcQryOptionInstrTradeCostField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:545</i>
 	 */
 	@Virtual(56) 
-	public native int ReqQryOptionInstrTradeCost(Pointer<CThostFtdcQryOptionInstrTradeCostField > pQryOptionInstrTradeCost, int nRequestID);
+	public native int ReqQryOptionInstrTradeCost(Pointer<CThostFtdcQryOptionInstrTradeCostField> pQryOptionInstrTradeCost, int nRequestID);
 	/**
 	 * \u8bf7\u6c42\u67e5\u8be2\u671f\u6743\u5408\u7ea6\u624b\u7eed\u8d39<br>
 	 * Original signature : <code>int ReqQryOptionInstrCommRate(CThostFtdcQryOptionInstrCommRateField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:548</i>
 	 */
 	@Virtual(57) 
-	public native int ReqQryOptionInstrCommRate(Pointer<CThostFtdcQryOptionInstrCommRateField > pQryOptionInstrCommRate, int nRequestID);
+	public native int ReqQryOptionInstrCommRate(Pointer<CThostFtdcQryOptionInstrCommRateField> pQryOptionInstrCommRate, int nRequestID);
 	/**
 	 * \u8bf7\u6c42\u67e5\u8be2\u6267\u884c\u5ba3\u544a<br>
 	 * Original signature : <code>int ReqQryExecOrder(CThostFtdcQryExecOrderField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:551</i>
 	 */
 	@Virtual(58) 
-	public native int ReqQryExecOrder(Pointer<CThostFtdcQryExecOrderField > pQryExecOrder, int nRequestID);
+	public native int ReqQryExecOrder(Pointer<CThostFtdcQryExecOrderField> pQryExecOrder, int nRequestID);
 	/**
 	 * \u8bf7\u6c42\u67e5\u8be2\u8be2\u4ef7<br>
 	 * Original signature : <code>int ReqQryForQuote(CThostFtdcQryForQuoteField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:554</i>
 	 */
 	@Virtual(59) 
-	public native int ReqQryForQuote(Pointer<CThostFtdcQryForQuoteField > pQryForQuote, int nRequestID);
+	public native int ReqQryForQuote(Pointer<CThostFtdcQryForQuoteField> pQryForQuote, int nRequestID);
 	/**
 	 * \u8bf7\u6c42\u67e5\u8be2\u62a5\u4ef7<br>
 	 * Original signature : <code>int ReqQryQuote(CThostFtdcQryQuoteField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:557</i>
 	 */
 	@Virtual(60) 
-	public native int ReqQryQuote(Pointer<CThostFtdcQryQuoteField > pQryQuote, int nRequestID);
+	public native int ReqQryQuote(Pointer<CThostFtdcQryQuoteField> pQryQuote, int nRequestID);
 	/**
 	 * \u8bf7\u6c42\u67e5\u8be2\u7ec4\u5408\u5408\u7ea6\u5b89\u5168\u7cfb\u6570<br>
 	 * Original signature : <code>int ReqQryCombInstrumentGuard(CThostFtdcQryCombInstrumentGuardField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:560</i>
 	 */
 	@Virtual(61) 
-	public native int ReqQryCombInstrumentGuard(Pointer<CThostFtdcQryCombInstrumentGuardField > pQryCombInstrumentGuard, int nRequestID);
+	public native int ReqQryCombInstrumentGuard(Pointer<CThostFtdcQryCombInstrumentGuardField> pQryCombInstrumentGuard, int nRequestID);
 	/**
 	 * \u8bf7\u6c42\u67e5\u8be2\u7533\u8bf7\u7ec4\u5408<br>
 	 * Original signature : <code>int ReqQryCombAction(CThostFtdcQryCombActionField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:563</i>
 	 */
 	@Virtual(62) 
-	public native int ReqQryCombAction(Pointer<CThostFtdcQryCombActionField > pQryCombAction, int nRequestID);
+	public native int ReqQryCombAction(Pointer<CThostFtdcQryCombActionField> pQryCombAction, int nRequestID);
 	/**
 	 * \u8bf7\u6c42\u67e5\u8be2\u8f6c\u5e10\u6d41\u6c34<br>
 	 * Original signature : <code>int ReqQryTransferSerial(CThostFtdcQryTransferSerialField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:566</i>
 	 */
 	@Virtual(63) 
-	public native int ReqQryTransferSerial(Pointer<CThostFtdcQryTransferSerialField > pQryTransferSerial, int nRequestID);
+	public native int ReqQryTransferSerial(Pointer<CThostFtdcQryTransferSerialField> pQryTransferSerial, int nRequestID);
 	/**
 	 * \u8bf7\u6c42\u67e5\u8be2\u94f6\u671f\u7b7e\u7ea6\u5173\u7cfb<br>
 	 * Original signature : <code>int ReqQryAccountregister(CThostFtdcQryAccountregisterField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:569</i>
 	 */
 	@Virtual(64) 
-	public native int ReqQryAccountregister(Pointer<CThostFtdcQryAccountregisterField > pQryAccountregister, int nRequestID);
+	public native int ReqQryAccountregister(Pointer<CThostFtdcQryAccountregisterField> pQryAccountregister, int nRequestID);
 	/**
 	 * \u8bf7\u6c42\u67e5\u8be2\u7b7e\u7ea6\u94f6\u884c<br>
 	 * Original signature : <code>int ReqQryContractBank(CThostFtdcQryContractBankField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:572</i>
 	 */
 	@Virtual(65) 
-	public native int ReqQryContractBank(Pointer<CThostFtdcQryContractBankField > pQryContractBank, int nRequestID);
+	public native int ReqQryContractBank(Pointer<CThostFtdcQryContractBankField> pQryContractBank, int nRequestID);
 	/**
 	 * \u8bf7\u6c42\u67e5\u8be2\u9884\u57cb\u5355<br>
 	 * Original signature : <code>int ReqQryParkedOrder(CThostFtdcQryParkedOrderField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:575</i>
 	 */
 	@Virtual(66) 
-	public native int ReqQryParkedOrder(Pointer<CThostFtdcQryParkedOrderField > pQryParkedOrder, int nRequestID);
+	public native int ReqQryParkedOrder(Pointer<CThostFtdcQryParkedOrderField> pQryParkedOrder, int nRequestID);
 	/**
 	 * \u8bf7\u6c42\u67e5\u8be2\u9884\u57cb\u64a4\u5355<br>
 	 * Original signature : <code>int ReqQryParkedOrderAction(CThostFtdcQryParkedOrderActionField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:578</i>
 	 */
 	@Virtual(67) 
-	public native int ReqQryParkedOrderAction(Pointer<CThostFtdcQryParkedOrderActionField > pQryParkedOrderAction, int nRequestID);
+	public native int ReqQryParkedOrderAction(Pointer<CThostFtdcQryParkedOrderActionField> pQryParkedOrderAction, int nRequestID);
 	/**
 	 * \u8bf7\u6c42\u67e5\u8be2\u4ea4\u6613\u901a\u77e5<br>
 	 * Original signature : <code>int ReqQryTradingNotice(CThostFtdcQryTradingNoticeField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:581</i>
 	 */
 	@Virtual(68) 
-	public native int ReqQryTradingNotice(Pointer<CThostFtdcQryTradingNoticeField > pQryTradingNotice, int nRequestID);
+	public native int ReqQryTradingNotice(Pointer<CThostFtdcQryTradingNoticeField> pQryTradingNotice, int nRequestID);
 	/**
 	 * \u8bf7\u6c42\u67e5\u8be2\u7ecf\u7eaa\u516c\u53f8\u4ea4\u6613\u53c2\u6570<br>
 	 * Original signature : <code>int ReqQryBrokerTradingParams(CThostFtdcQryBrokerTradingParamsField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:584</i>
 	 */
 	@Virtual(69) 
-	public native int ReqQryBrokerTradingParams(Pointer<CThostFtdcQryBrokerTradingParamsField > pQryBrokerTradingParams, int nRequestID);
+	public native int ReqQryBrokerTradingParams(Pointer<CThostFtdcQryBrokerTradingParamsField> pQryBrokerTradingParams, int nRequestID);
 	/**
 	 * \u8bf7\u6c42\u67e5\u8be2\u7ecf\u7eaa\u516c\u53f8\u4ea4\u6613\u7b97\u6cd5<br>
 	 * Original signature : <code>int ReqQryBrokerTradingAlgos(CThostFtdcQryBrokerTradingAlgosField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:587</i>
 	 */
 	@Virtual(70) 
-	public native int ReqQryBrokerTradingAlgos(Pointer<CThostFtdcQryBrokerTradingAlgosField > pQryBrokerTradingAlgos, int nRequestID);
+	public native int ReqQryBrokerTradingAlgos(Pointer<CThostFtdcQryBrokerTradingAlgosField> pQryBrokerTradingAlgos, int nRequestID);
 	/**
 	 * \u8bf7\u6c42\u67e5\u8be2\u76d1\u63a7\u4e2d\u5fc3\u7528\u6237\u4ee4\u724c<br>
 	 * Original signature : <code>int ReqQueryCFMMCTradingAccountToken(CThostFtdcQueryCFMMCTradingAccountTokenField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:590</i>
 	 */
 	@Virtual(71) 
-	public native int ReqQueryCFMMCTradingAccountToken(Pointer<CThostFtdcQueryCFMMCTradingAccountTokenField > pQueryCFMMCTradingAccountToken, int nRequestID);
+	public native int ReqQueryCFMMCTradingAccountToken(Pointer<CThostFtdcQueryCFMMCTradingAccountTokenField> pQueryCFMMCTradingAccountToken, int nRequestID);
 	/**
 	 * \u671f\u8d27\u53d1\u8d77\u94f6\u884c\u8d44\u91d1\u8f6c\u671f\u8d27\u8bf7\u6c42<br>
 	 * Original signature : <code>int ReqFromBankToFutureByFuture(CThostFtdcReqTransferField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:593</i>
 	 */
 	@Virtual(72) 
-	public native int ReqFromBankToFutureByFuture(Pointer<CThostFtdcReqTransferField > pReqTransfer, int nRequestID);
+	public native int ReqFromBankToFutureByFuture(Pointer<CThostFtdcReqTransferField> pReqTransfer, int nRequestID);
 	/**
 	 * \u671f\u8d27\u53d1\u8d77\u671f\u8d27\u8d44\u91d1\u8f6c\u94f6\u884c\u8bf7\u6c42<br>
 	 * Original signature : <code>int ReqFromFutureToBankByFuture(CThostFtdcReqTransferField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:596</i>
 	 */
 	@Virtual(73) 
-	public native int ReqFromFutureToBankByFuture(Pointer<CThostFtdcReqTransferField > pReqTransfer, int nRequestID);
+	public native int ReqFromFutureToBankByFuture(Pointer<CThostFtdcReqTransferField> pReqTransfer, int nRequestID);
 	/**
 	 * \u671f\u8d27\u53d1\u8d77\u67e5\u8be2\u94f6\u884c\u4f59\u989d\u8bf7\u6c42<br>
 	 * Original signature : <code>int ReqQueryBankAccountMoneyByFuture(CThostFtdcReqQueryAccountField*, int)</code><br>
 	 * <i>native declaration : F:\jna\ThostFtdcTraderApi.h:599</i>
 	 */
 	@Virtual(74) 
-	public native int ReqQueryBankAccountMoneyByFuture(Pointer<CThostFtdcReqQueryAccountField > pReqQueryAccount, int nRequestID);
+	public native int ReqQueryBankAccountMoneyByFuture(Pointer<CThostFtdcReqQueryAccountField> pReqQueryAccount, int nRequestID);
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public CThostFtdcTraderApi(Pointer pointer) {
 		super(pointer);

@@ -5,7 +5,9 @@ import org.bridj.IntValuedEnum;
 import org.bridj.Pointer;
 
 import ctputil.CTPLibraryUtil;
-import mdapi.ThostFtdcMdApiLibrary.THOST_TE_RESUME_TYPE;
+import thostftdctraderapi.CThostFtdcTraderApi;
+import thostftdctraderapi.CThostFtdcTraderSpi;
+import thostftdcuserapidatatype.ThostFtdcUserApiDataTypeLibrary.THOST_TE_RESUME_TYPE;
 import thostftdcuserapistruct.CThostFtdcInputOrderActionField;
 import thostftdcuserapistruct.CThostFtdcInputOrderField;
 import thostftdcuserapistruct.CThostFtdcParkedOrderActionField;
@@ -48,8 +50,6 @@ import thostftdcuserapistruct.CThostFtdcSettlementInfoConfirmField;
 import thostftdcuserapistruct.CThostFtdcTradingAccountPasswordUpdateField;
 import thostftdcuserapistruct.CThostFtdcUserLogoutField;
 import thostftdcuserapistruct.CThostFtdcUserPasswordUpdateField;
-import tradeapi.CThostFtdcTraderApi;
-import tradeapi.CThostFtdcTraderSpi;
 
 public class CTPTraderApi {
     static {
@@ -57,12 +57,12 @@ public class CTPTraderApi {
         BridJ.register(CThostFtdcTraderApi.class);
     }
     
-    CThostFtdcTraderApi traderApi;//用了组合的方式
+    private CThostFtdcTraderApi traderApi;//用了组合的方式
     public CTPTraderApi(CThostFtdcTraderApi traderApi) {
         this.traderApi = traderApi;
     }
     public static CTPTraderApi createFtdcTraderApi() {
-        return createFtdcTraderApi("");
+        return createFtdcTraderApi(".\\flow\\");
     }
 
     public static CTPTraderApi createFtdcTraderApi(String pszFlowPath) {

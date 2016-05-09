@@ -4,6 +4,7 @@ import org.bridj.Pointer;
 import org.bridj.StructObject;
 import org.bridj.ann.Virtual;
 
+import thostftdctraderapi.CThostFtdcTraderSpi;
 import thostftdcuserapistruct.CThostFtdcAccountregisterField;
 import thostftdcuserapistruct.CThostFtdcBrokerTradingAlgosField;
 import thostftdcuserapistruct.CThostFtdcBrokerTradingParamsField;
@@ -55,7 +56,6 @@ import thostftdcuserapistruct.CThostFtdcTransferBankField;
 import thostftdcuserapistruct.CThostFtdcTransferSerialField;
 import thostftdcuserapistruct.CThostFtdcUserLogoutField;
 import thostftdcuserapistruct.CThostFtdcUserPasswordUpdateField;
-import tradeapi.CThostFtdcTraderSpi;
 
 public class CTPTraderSpiAdapter extends CThostFtdcTraderSpi{
 private CTPTraderSpi traderSpi;

@@ -1,4 +1,5 @@
-package tradeapi;
+package thostftdctraderapi;
+import org.bridj.BridJ;
 import org.bridj.Pointer;
 import org.bridj.ann.Library;
 import org.bridj.ann.Virtual;
@@ -91,6 +92,7 @@ import thostftdcuserapistruct.CThostFtdcUserPasswordUpdateField;
 public class CThostFtdcTraderSpi extends CPPObject {
 	public CThostFtdcTraderSpi() {
 		super();
+		BridJ.protectFromGC(this);
 	}
 	/**
 	 * \u5f53\u5ba2\u6237\u7aef\u4e0e\u4ea4\u6613\u540e\u53f0\u5efa\u7acb\u8d77\u901a\u4fe1\u8fde\u63a5\u65f6\uff08\u8fd8\u672a\u767b\u5f55\u524d\uff09\uff0c\u8be5\u65b9\u6cd5\u88ab\u8c03\u7528\u3002<br>

@@ -4,6 +4,7 @@ import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.TimeUnit;
 
+import thostftdcuserapidatatype.ThostFtdcUserApiDataTypeLibrary.THOST_TE_RESUME_TYPE;
 import thostftdcuserapistruct.CThostFtdcAccountregisterField;
 import thostftdcuserapistruct.CThostFtdcBrokerTradingAlgosField;
 import thostftdcuserapistruct.CThostFtdcBrokerTradingParamsField;
@@ -91,6 +92,8 @@ public class CTPTraderSpi {
         }
         traderApi.registerSpi(this);
         traderApi.registerFront("tcp://180.166.103.34:41205");
+        traderApi.subscribePrivateTopic(THOST_TE_RESUME_TYPE.THOST_TERT_RESTART);
+        traderApi.subscribePublicTopic(THOST_TE_RESUME_TYPE.THOST_TERT_RESTART);
         traderApi.init();
 
         //之后的执行流程:
@@ -189,17 +192,12 @@ public class CTPTraderSpi {
     *	TODO Bridj底层存在bug
     */
     public void onRspQryInstrument(CThostFtdcInstrumentField pOutInfo, CThostFtdcRspInfoField pRspInfo, int nRequestID, boolean isLast) {
-        System.out.println(pOutInfo.getInstrumentID() + ":=========" +pOutInfo.getInstrumentName()+":=====" + pOutInfo.getExchangeID());
-    	
     	//记录日志返回值
         if (null != pRspInfo) {
             System.out.println("交易服务(onRspQryInstrument):查询合约响应失败.");
         }
         instrumentCount++;
         System.out.println("查询第" + instrumentCount + "条" + pOutInfo.toString());
-//        if(instrumentCount == 5000){
-//        	System.out.println("查询第" + instrumentCount + "条" + pOutInfo.toString());
-//        }
         //如果是前台查询记录总数，如果是后台查询记录查询总数和是否有新增
         if (isLast) {
         	double diffTime = (System.currentTimeMillis() - beginTime) / 1000.0;
