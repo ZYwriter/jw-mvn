@@ -23,6 +23,7 @@
 		<module>jw-mvn-jna-jctp</module>
 		<module>jw-mvn-jctp32-64</module>
 		<module>jw-mvn-gecco</module>
+		<module>jw-mvn-xxtea</module>
 	</modules>
 	<dependencies>
 		<dependency>
