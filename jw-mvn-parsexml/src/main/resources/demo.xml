@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<INFOMATION>
+	<HOME>
+		<NO>A1234</NO>
+		<ADDR>终南山A</ADDR>
+	</HOME>	
+	<HOME>
+		<NO>B1234</NO>
+		<ADDR>终南山B</ADDR>
+	</HOME>
+	<HOME>
+		<NO>C1234</NO>
+		<ADDR>终南山C</ADDR>
+	</HOME>
+	<HOME>
+		<NO>D1234</NO>
+		<ADDR>终南山D</ADDR>
+	</HOME>
+	<HOME>
+		<NO>E1234</NO>
+		<ADDR>终南山E</ADDR>
+	</HOME>
+	<HOME>
+		<NO>F1234</NO>
+		<ADDR>终南山F</ADDR>
+	</HOME>
+</INFOMATION>
